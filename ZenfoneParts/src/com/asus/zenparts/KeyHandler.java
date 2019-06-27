@@ -232,7 +232,7 @@ public class KeyHandler implements AlternativeDeviceKeyHandler {
 			case GESTURE_SWIPE_UP:
                 action = getGestureSharedPreferences()
                         .getString(ScreenOffGesture.PREF_GESTURE_UP,
-                        ActionConstants.ACTION_WAKE_DEVICE);
+                        ActionConstants.ACTION_NULL);
                         doHapticFeedback();
                 break;
             case GESTURE_SWIPE_DOWN:
