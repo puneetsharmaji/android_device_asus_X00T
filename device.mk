@@ -136,7 +136,6 @@ PRODUCT_PACKAGES += \
     camera.device@1.0-impl \
     camera.device@3.2-impl \
     camera.device@3.3-impl \
-    libxml2 \
     Snap
 
 # Connectivity Engine support (CNE)
