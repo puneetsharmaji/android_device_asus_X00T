@@ -20,7 +20,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
 # Inherit some common DOT OS stuff
-$(call inherit-product, vendor/dot/config/common.mk)
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Inherit from X00T device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -28,7 +28,7 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 PRODUCT_BRAND := asus
 PRODUCT_DEVICE := X00T
 PRODUCT_MANUFACTURER := asus
-PRODUCT_NAME := dot_X00T
+PRODUCT_NAME := aosp_X00T
 PRODUCT_MODEL := ZenFone Max Pro M1
 TARGET_BOOT_ANIMATION_RES := 1080
 
@@ -36,6 +36,8 @@ PRODUCT_GMS_CLIENTID_BASE := android-asus
 
 TARGET_VENDOR := asus
 TARGET_VENDOR_PRODUCT_NAME := X00T
+TARGET_GAPPS_ARCH := arm64
+TARGET_INCLUDE_STOCK_ARCORE := true
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="sdm660_64-user 9 PKQ1 1181 release-keys"
